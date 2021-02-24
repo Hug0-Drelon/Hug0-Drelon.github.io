@@ -4,8 +4,8 @@
     --main-bg-color: #04005E;
     --main-text-color: #25DAE1;
     --block-fl-color: #400DC2;
-    --block-sl-color: #E92EFB;
-    --block-tl-color: #FF2079;
+    --block-sl-color: #FF2079;
+    --block-tl-color: #E92EFB;
     font-family: 'Roboto Condensed', sans-serif;
     text-align: justify
 
@@ -83,7 +83,7 @@
 
 .social_icon img {
     max-width: 80px;
-    transition: all 0.2s;
+    transition: all 0.15s;
 }
 
 .social_icon img:hover {
@@ -120,6 +120,27 @@
 .button-to-top_icon:hover {
     cursor: pointer;
     width: 83px;
+}
+
+.project_img {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.project_img img {
+    width: 80%;
+}
+
+.text-link {
+    color: var(--main-text-color);
+}
+
+.text-link:hover {
+    color: var(--block-tl-color);
+}
+
+.project-end {
+    margin-bottom: 1.5em;
 }
 
 /*BLOCK STYLE*/
