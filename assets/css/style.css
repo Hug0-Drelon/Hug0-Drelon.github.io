@@ -1,0 +1,47 @@
+:root {
+    --header-bg-color: #000000;
+    --header-text-color: #440BD4;
+    --main-bg-color: #04005E;
+    --main-text-color: #25DAE1;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.wrapper, .social {
+    display: flex;
+}
+
+/*HEADER*/ 
+
+.wrapper_header {
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
+    min-width: 50vw;
+    height: 100vh;
+    position: sticky;
+    top: 0px;
+}
+
+.logo {
+    width: 100%;
+    display: block;
+}
+
+.logo_img {
+    display: block;
+    width: 70%;
+    margin: 7% auto 0% auto;
+}
+
+.logo_title, .logo_subtitle {
+    text-align: center;
+    line-height: 0.1em;
+}
+
+.logo_title {
+    font-size: 4.25em;
+}
+
+.logo_subtitle {
+    font-size: 3.6em;
+}
+
