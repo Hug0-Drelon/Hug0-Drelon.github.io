@@ -64,6 +64,7 @@
 .outro {
     justify-content: space-around;
     align-items: center;
+    margin: 2em 0;
 }
 
 .outro_text {
@@ -99,8 +100,12 @@
     margin: 0 1.5em 0 1.5em;
 }
 
-.intro_text, .details_text, .tech_title, .tech_list {
+.intro_text, .details_text, .tech_title, .tech_list, .project_title, .project_text {
     padding: 1em;
+}
+
+.project_title, .tech_title {
+    margin-bottom: -2em;
 }
 
 .button-to-top {
@@ -109,12 +114,12 @@
 
 .button-to-top_icon {
     width: 80px;
-    transition: all 0.15s;
+    transition: all 0.05s;
 }
 
 .button-to-top_icon:hover {
     cursor: pointer;
-    width: 85px;
+    width: 83px;
 }
 
 /*BLOCK STYLE*/
