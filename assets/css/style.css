@@ -75,19 +75,25 @@
 }
 
 .social_icon {
+    box-sizing: content-box;
     margin: 1em;
     display: block;
 }
 
 .social_icon img {
     max-width: 80px;
+    transition: all 0.2s;
+}
+
+.social_icon img:hover {
+    filter: blur(3px)
 }
 
 .tech_list {
-    columns: 3;
-    -webkit-columns: 3;
-    -moz-columns: 3;
-  }
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
 
 .tech_list li {
     margin: 0 1.5em 0 1.5em;
@@ -97,6 +103,19 @@
     padding: 1em;
 }
 
+.button-to-top {
+    text-align: center;
+}
+
+.button-to-top_icon {
+    width: 80px;
+    transition: all 0.15s;
+}
+
+.button-to-top_icon:hover {
+    cursor: pointer;
+    width: 85px;
+}
 
 /*BLOCK STYLE*/
 
