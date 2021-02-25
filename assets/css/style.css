@@ -190,28 +190,31 @@
     z-index:3;
     box-shadow: var(--block-shadow);
     border-radius: var(--block-border-radius);
+    margin: auto auto;
 }
 
 .block_second_layer {
     background-color: var(--block-sl-color);
     position:relative; 
-    width: 100%;
+    width: 99%;
     height: 25px;
     top:-39px; 
     z-index:2;
     box-shadow: var(--block-shadow);
     border-radius: var(--block-border-radius);
+    margin: auto auto;
 }
 
 .block_third_layer {
     background-color: var(--block-tl-color);
     position:relative; 
-    width: 100%;
+    width: 98%;
     height: 25px;
     top:-57px; 
     z-index: 1;
     box-shadow: var(--block-shadow);
     border-radius: var(--block-border-radius);
+    margin: auto auto;
 }
 
 .social_sl {
