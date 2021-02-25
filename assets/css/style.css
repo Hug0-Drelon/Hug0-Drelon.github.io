@@ -65,10 +65,12 @@
     justify-content: space-around;
     align-items: center;
     margin: 2em 0;
+    flex-wrap: wrap;
 }
 
 .outro_text {
     flex-basis: 45%;
+    margin: 1.5em;
 }
 
 .social_container {
@@ -82,7 +84,7 @@
 }
 
 .social_icon img {
-    max-width: 80px;
+    width: 80px;
     transition: all 0.15s;
 }
 
@@ -180,5 +182,40 @@
 
 .social_tl {
     top:-35px; 
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 1022px) {
+    .wrapper_header {
+        position: absolute;
+        width: 100vw;
+        height: 100vw;
+    }
+
+    .wrapper_content {
+        width: 100%;
+        position: absolute;
+        top: 100vw;
+    }
+
+    .logo_title {
+        font-size: 2.25em;
+    }
+    
+    .logo_subtitle {
+        font-size: 1.9em;
+    }
+}
+
+@media (max-width: 478px) {
+    .social_icon img {
+        width: 60px;
+    }
+
+    .social_icon {
+        margin: 0.3em;
+
+    }
 }
 
