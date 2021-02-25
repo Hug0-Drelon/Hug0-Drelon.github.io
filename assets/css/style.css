@@ -52,7 +52,22 @@
     flex-wrap: nowrap;
     justify-content: space-around;
     font-size: 2em;
+    line-height: 1.5em;
     margin-top: -0.8em;
+}
+
+.nav p {
+    padding-left: 8px;
+    padding-right: 8px;
+    border: solid 2px;
+    border-radius: 2px;
+    border-color: var(--header-text-color);
+    transition: all 0.15s;
+}
+
+.nav p:hover {
+    color: var(--main-text-color);
+    border-color: var(--main-text-color);
 }
 
 /*==========*/
@@ -217,15 +232,27 @@
     }
 
     .logo_title {
-        font-size: 8vw;
+        font-size: 9vw;
     }
     
     .logo_subtitle {
-        font-size: 6vw;
+        font-size: 7vw;
+    }
+
+    .nav {
+        margin-top: 1.2em;
     }
 }
 
 @media (max-width: 478px) {
+    .logo_title {
+        font-size: 10vw;
+    }
+    
+    .logo_subtitle {
+        font-size: 8vw;
+    }
+
     .social_icon img {
         width: 60px;
     }
@@ -236,7 +263,7 @@
 
     .logo_img {
         margin-top: 6%;
-        margin-bottom: -1em;
+        margin-bottom: -2em;
     }
 
     .wrapper_content {
@@ -252,7 +279,7 @@
     }
 
     .nav {
-        font-size: 1.2em;
+        font-size: 1.1em;
         margin-top: -0.8em;
     }
 }
