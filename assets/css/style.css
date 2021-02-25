@@ -1,0 +1,286 @@
+:root {
+    --header-bg-color: #000000;
+    --header-text-color: #440BD4;
+    --main-bg-color: #04005E;
+    --main-text-color: #25DAE1;
+    --block-fl-color: #400DC2;
+    --block-sl-color: #FF2079;
+    --block-tl-color: #E92EFB;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: justify
+
+}
+
+.wrapper, .outro, .social_container {
+    display: flex;
+}
+
+/*==========*/
+/*==HEADER==*/ 
+/*==========*/
+
+.wrapper_header {
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
+    width: 50vw;
+    height: 100vh;
+    position: sticky;
+    top: 0px;
+}
+
+.logo_img {
+    display: block;
+    width: 40vw;
+    margin: auto auto -3rem auto;
+}
+
+.logo_title, .logo_subtitle {
+    text-align: center;
+    line-height: 0.1em;
+}
+
+.logo_title {
+    font-size: 6vw;
+}
+
+.logo_subtitle {
+    font-size: 5vw;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    font-size: 2em;
+    line-height: 1.5em;
+    margin-top: -1.5em;
+}
+
+.nav p {
+    padding-left: 8px;
+    padding-right: 8px;
+    border: solid 2px;
+    border-radius: 2px;
+    border-color: var(--header-text-color);
+    transition: all 0.15s;
+}
+
+.nav p:hover {
+    color: var(--main-text-color);
+    border-color: var(--main-text-color);
+}
+
+/*==========*/
+/*===MAIN===*/ 
+/*==========*/
+
+.wrapper_content {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    width: 50%;
+    padding: 2em 1em;
+    font-size: 1.4em;
+    box-sizing: border-box;
+}
+
+.outro {
+    justify-content: space-around;
+    align-items: center;
+    margin: 2em 0;
+    flex-wrap: wrap;
+}
+
+.outro_text {
+    flex-basis: 45%;
+    margin: 1.5em;
+}
+
+.social_container {
+    justify-content: space-around;
+}
+
+.social_icon {
+    box-sizing: content-box;
+    margin: 1em;
+    display: block;
+}
+
+.social_icon img {
+    width: 80px;
+    transition: all 0.15s;
+}
+
+.social_icon img:hover {
+    filter: blur(3px)
+}
+
+.tech_list {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.tech_list li {
+    margin: 0 1.5em 0 1.5em;
+}
+
+.intro_text, .details_text, .tech_title, .tech_list, .project_title, .project_text {
+    padding: 1em;
+}
+
+.project_title, .tech_title {
+    margin-bottom: -2em;
+}
+
+.button-to-top {
+    text-align: center;
+}
+
+.button-to-top_icon {
+    width: 80px;
+    transition: all 0.05s;
+}
+
+.button-to-top_icon:hover {
+    cursor: pointer;
+    width: 83px;
+}
+
+.project_img {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.project_img img {
+    width: 80%;
+}
+
+.text-link {
+    color: var(--main-text-color);
+}
+
+.text-link:hover {
+    color: var(--block-tl-color);
+}
+
+.project-end {
+    margin-bottom: 1.5em;
+    margin-top: -0.5em;
+}
+
+/*==========*/
+/*==BLOCKS==*/ 
+/*==========*/
+
+.block {
+    padding: 0;
+    width: 100%;
+}
+
+.block_first_layer {
+    background-color: var(--block-fl-color);
+    position: relative; 
+    z-index:3;
+}
+
+.block_second_layer {
+    background-color: var(--block-sl-color);
+    position:relative; 
+    width: 100%;
+    height: 25px;
+    top:-39px; 
+    z-index:2;
+}
+
+.block_third_layer {
+    background-color: var(--block-tl-color);
+    position:relative; 
+    width: 100%;
+    height: 25px;
+    top:-57px; 
+    z-index: 1;
+}
+
+.social_sl {
+    top:-18px; 
+}
+
+.social_tl {
+    top:-35px; 
+}
+
+/*==============*/
+/*==RESPONSIVE==*/ 
+/*==============*/
+
+@media (max-width: 1022px) {
+    .wrapper_header {
+        position: absolute;
+        width: 100vw;
+        height: 100vw;
+    }
+
+    .wrapper_content {
+        width: 100%;
+        position: absolute;
+        top: 100vw;
+    }
+
+    .logo_img {
+        width: 70vw;
+        margin-bottom: -1em;
+    }
+
+    .logo_title {
+        font-size: 9vw;
+    }
+    
+    .logo_subtitle {
+        font-size: 7vw;
+    }
+
+    .nav {
+        margin-top: 1.2em;
+    }
+}
+
+@media (max-width: 478px) {
+    .logo_title {
+        font-size: 10vw;
+    }
+    
+    .logo_subtitle {
+        font-size: 8vw;
+    }
+
+    .social_icon img {
+        width: 60px;
+    }
+
+    .social_icon {
+        margin: 0.3em;
+    }
+
+    .logo_img {
+        margin-top: 6%;
+        margin-bottom: -2em;
+    }
+
+    .wrapper_content {
+        padding: 2em 0.8em;
+    }
+
+    .tech_list {
+        padding: 1em 1em 1em 0.4em;
+    }
+
+    .outro_text {
+        flex-basis: 100%;
+    }
+
+    .nav {
+        font-size: 1.1em;
+        margin-top: -0.8em;
+    }
+}
+
