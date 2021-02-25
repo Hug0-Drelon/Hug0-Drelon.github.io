@@ -6,6 +6,8 @@
     --block-fl-color: #400DC2;
     --block-sl-color: #FF2079;
     --block-tl-color: #E92EFB;
+    --block-shadow: 0px 1px 4px 0px #04005E;
+    --block-border-radius: 0 0 3px 3px;
     font-family: 'Roboto Condensed', sans-serif;
     text-align: justify
 
@@ -186,6 +188,8 @@
     background-color: var(--block-fl-color);
     position: relative; 
     z-index:3;
+    box-shadow: var(--block-shadow);
+    border-radius: var(--block-border-radius);
 }
 
 .block_second_layer {
@@ -195,6 +199,8 @@
     height: 25px;
     top:-39px; 
     z-index:2;
+    box-shadow: var(--block-shadow);
+    border-radius: var(--block-border-radius);
 }
 
 .block_third_layer {
@@ -204,6 +210,8 @@
     height: 25px;
     top:-57px; 
     z-index: 1;
+    box-shadow: var(--block-shadow);
+    border-radius: var(--block-border-radius);
 }
 
 .social_sl {
