@@ -26,15 +26,10 @@
     top: 0px;
 }
 
-.logo {
-    width: 100%;
-    display: block;
-}
-
 .logo_img {
     display: block;
-    width: 70%;
-    margin: 7% auto 0% auto;
+    width: 40vw;
+    margin: auto auto 0% auto;
 }
 
 .logo_title, .logo_subtitle {
@@ -43,11 +38,11 @@
 }
 
 .logo_title {
-    font-size: 4.25em;
+    font-size: 6vw;
 }
 
 .logo_subtitle {
-    font-size: 3.6em;
+    font-size: 5vw;
 }
 
 /*CONTENT*/
@@ -56,7 +51,7 @@
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
     width: 50%;
-    padding: 2em 2em;
+    padding: 2em 1em;
     font-size: 1.4em;
     box-sizing: border-box;
 }
@@ -143,6 +138,7 @@
 
 .project-end {
     margin-bottom: 1.5em;
+    margin-top: -0.5em;
 }
 
 /*BLOCK STYLE*/
@@ -199,12 +195,16 @@
         top: 100vw;
     }
 
+    .logo_img {
+        width: 70vw;
+    }
+
     .logo_title {
-        font-size: 2.25em;
+        font-size: 8vw;
     }
     
     .logo_subtitle {
-        font-size: 1.9em;
+        font-size: 6vw;
     }
 }
 
@@ -215,7 +215,22 @@
 
     .social_icon {
         margin: 0.3em;
+    }
 
+    .logo_img {
+        margin-top: 6%;
+    }
+
+    .wrapper_content {
+        padding: 2em 0.8em;
+    }
+
+    .tech_list {
+        padding: 1em 1em 1em 0.4em;
+    }
+
+    .outro_text {
+        flex-basis: 100%;
     }
 }
 
