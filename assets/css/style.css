@@ -25,6 +25,7 @@
     width: 50vw;
     height: 100vh;
     position: sticky;
+    position: -webkit-sticky;
     top: 0px;
 }
 
