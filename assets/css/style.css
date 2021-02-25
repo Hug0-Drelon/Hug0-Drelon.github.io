@@ -15,7 +15,9 @@
     display: flex;
 }
 
-/*HEADER*/ 
+/*==========*/
+/*==HEADER==*/ 
+/*==========*/
 
 .wrapper_header {
     background-color: var(--header-bg-color);
@@ -29,7 +31,7 @@
 .logo_img {
     display: block;
     width: 40vw;
-    margin: auto auto 0% auto;
+    margin: auto auto -3rem auto;
 }
 
 .logo_title, .logo_subtitle {
@@ -45,7 +47,17 @@
     font-size: 5vw;
 }
 
-/*CONTENT*/
+.nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    font-size: 2em;
+    margin-top: -0.8em;
+}
+
+/*==========*/
+/*===MAIN===*/ 
+/*==========*/
 
 .wrapper_content {
     background-color: var(--main-bg-color);
@@ -141,7 +153,9 @@
     margin-top: -0.5em;
 }
 
-/*BLOCK STYLE*/
+/*==========*/
+/*==BLOCKS==*/ 
+/*==========*/
 
 .block {
     padding: 0;
@@ -180,7 +194,9 @@
     top:-35px; 
 }
 
-/*RESPONSIVE*/
+/*==============*/
+/*==RESPONSIVE==*/ 
+/*==============*/
 
 @media (max-width: 1022px) {
     .wrapper_header {
@@ -197,6 +213,7 @@
 
     .logo_img {
         width: 70vw;
+        margin-bottom: -1em;
     }
 
     .logo_title {
@@ -219,6 +236,7 @@
 
     .logo_img {
         margin-top: 6%;
+        margin-bottom: -1em;
     }
 
     .wrapper_content {
@@ -231,6 +249,11 @@
 
     .outro_text {
         flex-basis: 100%;
+    }
+
+    .nav {
+        font-size: 1.2em;
+        margin-top: -0.8em;
     }
 }
 
