@@ -75,6 +75,7 @@
 .nav p:hover {
     color: var(--main-text-color);
     border-color: var(--main-text-color);
+    cursor: pointer;
 }
 
 /*==========*/
@@ -85,9 +86,10 @@
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
     width: 50%;
-    padding: 2em 1em;
+    padding: 0em 1em;
     font-size: 1.4em;
     box-sizing: border-box;
+    letter-spacing: 1px;
 }
 
 .outro {
@@ -173,6 +175,12 @@
 .project-end {
     margin-bottom: 1.5em;
     margin-top: -0.5em;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: #440BD4;
 }
 
 /*==========*/
