@@ -57,7 +57,7 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
-    font-size: 2em;
+    font-size: 1.8em;
     line-height: 1.5em;
 }
 
@@ -290,7 +290,7 @@
 
     .nav {
         font-size: 1.1em;
-        margin-top: -0.8em;
+        margin-top: -0.6em;
     }
 }
 
