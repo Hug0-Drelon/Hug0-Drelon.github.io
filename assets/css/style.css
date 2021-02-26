@@ -47,6 +47,14 @@
     line-height: 0.1em;
 }
 
+.logo_title, .logo_subtitle, .logo_img {
+    transition: all 0.1s;
+}
+
+.logo_title:hover, .logo_subtitle:hover, .logo_img:hover {
+    filter: brightness(120%);
+}
+
 .logo_title {
     font-size: 4.5em;
 }
@@ -154,6 +162,7 @@
     cursor: pointer;
     width: 84px;
     margin: -2px;
+    filter: brightness(108%);
 }
 
 .project_img {
