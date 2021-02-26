@@ -152,7 +152,8 @@
 
 .button-to-top_icon:hover {
     cursor: pointer;
-    width: 83px;
+    width: 84px;
+    margin: -2px;
 }
 
 .project_img {
